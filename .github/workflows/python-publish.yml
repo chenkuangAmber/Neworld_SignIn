@@ -39,6 +39,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
+        sudo pip install pyvirtualdisplay;
         python -m pip install --upgrade pip
         pip install setuptools wheel twine
         pip install selenium
