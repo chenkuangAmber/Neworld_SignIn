@@ -29,6 +29,7 @@ cookie = f1.read()
 cookie =json.loads(cookie)
 for c in cookie:
     driver.add_cookie(c)
+    print('cookies',c)
 
 driver.refresh()#刷新页面 
 
