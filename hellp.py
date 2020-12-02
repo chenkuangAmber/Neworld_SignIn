@@ -4,6 +4,13 @@ import json
 from selenium.webdriver.chrome.options import Options
 
 
+from pyvirtualdisplay import Display
+
+
+display = Display(visible=0, size=(800, 800))  
+display.start()
+
+
 chrome_options = Options()
 
 # chrome_options.add_argument('--headless')
