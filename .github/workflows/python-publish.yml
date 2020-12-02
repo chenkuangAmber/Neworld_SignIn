@@ -12,7 +12,7 @@ on:
     # 建议每个人都修改下时间！不要使用默认时间！最好不要设定在整点，错开峰值，避免大量G站同一个IP在相同时间去请求B站接口，导致IP被禁！
 
 jobs:
-  run-bilibili-tool:
+  run-Neworld-tool:
 
     runs-on: ubuntu-latest
 

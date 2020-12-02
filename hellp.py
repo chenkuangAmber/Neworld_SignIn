@@ -1,16 +1,26 @@
 from selenium import webdriver
 import time
 import json
-# from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.options import Options
 
 
-# chrome_options = Options()
+chrome_options = Options()
+
 # chrome_options.add_argument('--headless')
 # chrome_options.add_argument('--no-sandbox')
 # chrome_options.add_argument('--disable-dev-shm-usage')
+
+
+# ChromeOptions options = new ChromeOptions()
+chrome_options.addArguments("start-maximized"); # open Browser in maximized mode
+chrome_options.addArguments("disable-infobars"); # disabling infobars
+chrome_options.addArguments("--disable-extensions"); # disabling extensions
+chrome_options.addArguments("--disable-gpu"); # applicable to windows os only
+chrome_options.addArguments("--disable-dev-shm-usage"); # overcome limited resource problems
+chrome_options.addArguments("--no-sandbox"); # Bypass OS security model
 # action  linux服务器驱动地址
-# driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Neworld_SignIn/driver/chromedriver',chrome_options=chrome_options)    # Chrome浏览器  
-driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Neworld_SignIn/driver/chromedriver')    # Chrome浏览器  
+driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Neworld_SignIn/driver/chromedriver',chrome_options=chrome_options)    # Chrome浏览器  
+# driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Neworld_SignIn/driver/chromedriver')    # Chrome浏览器  
 
 # windows 系统驱动路径
 # driver = webdriver.Chrome(executable_path='D:\Downloads\chromedriver_win32\chromedriver.exe')    # Chrome浏览器
