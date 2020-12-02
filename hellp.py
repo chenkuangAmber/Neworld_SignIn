@@ -12,8 +12,8 @@ chrome_options = Options()
 
 
 # ChromeOptions options = new ChromeOptions()
-chrome_options.addArguments('start-maximized'); # open Browser in maximized mode
-chrome_options.addArguments('disable-infobars'); # disabling infobars
+# chrome_options.addArguments('start-maximized'); # open Browser in maximized mode
+# chrome_options.addArguments('disable-infobars'); # disabling infobars
 chrome_options.addArguments('--disable-extensions'); # disabling extensions
 chrome_options.addArguments('--disable-gpu'); # applicable to windows os only
 chrome_options.addArguments('--disable-dev-shm-usage'); # overcome limited resource problems
