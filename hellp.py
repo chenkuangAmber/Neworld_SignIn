@@ -33,4 +33,5 @@ for c in cookie:
 
 driver.refresh()#刷新页面 
 
+time.sleep(5)
 driver.find_element_by_id("checkin").click() # 点击元素
