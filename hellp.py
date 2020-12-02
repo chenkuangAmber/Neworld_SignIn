@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 import json
 
-driver = webdriver.Chrome("/home/runner/work/Neworld_SignIn/Neworld_SignIn/driver/chromedriver.exe")    # Chrome浏览器
+driver = webdriver.Chrome("/home/runner/work/Neworld_SignIn/Neworld_SignIn/driver/chromedriver")    # Chrome浏览器
 
 # driver.deleted_all_cookies()
 
