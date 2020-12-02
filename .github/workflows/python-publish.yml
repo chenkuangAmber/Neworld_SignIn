@@ -37,7 +37,6 @@ jobs:
         python-version: '3.x'
     - name: Install dependencies
       run: |
-        sudo apt-get install ia32-libs
         python -m pip install --upgrade pip
         pip install setuptools wheel twine
         pip install selenium
