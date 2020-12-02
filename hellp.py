@@ -23,6 +23,8 @@ driver.get('https://neworld.date/user')
 
 u = os.environ["USERNAME"]
 p = os.environ["PASSWORD"]
+print('u',u)
+print('p',p)
 #  获取cookies 
 time.sleep(5)
 # 账号密码登录版本
