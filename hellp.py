@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 import json
 
-driver = webdriver.Chrome("D:\Downloads\chromedriver_win32\chromedriver.exe")    # Chrome浏览器
+driver = webdriver.Chrome("/driver/chromedriver.exe")    # Chrome浏览器
 
 # driver.deleted_all_cookies()
 
