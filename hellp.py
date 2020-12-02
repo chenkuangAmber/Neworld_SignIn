@@ -1,34 +1,12 @@
 from selenium import webdriver
 import time
 import json
+import os
 from selenium.webdriver.chrome.options import Options
 
 
-# from pyvirtualdisplay import Display
-
-
-# display = Display(visible=0, size=(800, 800))  
-# display.start()
-
 
 chrome_options = Options()
-
-# chrome_options.add_argument('--headless')
-# chrome_options.add_argument('--no-sandbox')
-# chrome_options.add_argument('--disable-dev-shm-usage')
-
-
-# ChromeOptions options = new ChromeOptions()
-# chrome_options.add_argument('start-maximized'); # open Browser in maximized mode
-# chrome_options.add_argument('disable-infobars'); # disabling infobars
-# chrome_options.add_argument('--disable-extensions'); # disabling extensions
-# chrome_options.add_argument('--disable-gpu'); # applicable to windows os only
-# chrome_options.add_argument('--disable-dev-shm-usage'); # overcome limited resource problems
-# chrome_options.add_argument('--no-sandbox'); # Bypass OS security model
-
-
-
-
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--window-size=1420,1080')
@@ -41,18 +19,18 @@ driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Newo
 # windows 系统驱动路径
 # driver = webdriver.Chrome(executable_path='D:\Downloads\chromedriver_win32\chromedriver.exe')    # Chrome浏览器
 
-# driver.deleted_all_cookies()
-
-# driver.get('http://www.baidu.com') 
 driver.get('https://neworld.date/user') 
+
+u = os.environ["USERNAME"]
+p = os.environ["PASSWORD"]
 #  获取cookies 
 time.sleep(5)
 # 账号密码登录版本
 driver.find_element_by_id('email').clear()
-driver.find_element_by_id("email").send_keys('1279552038@qq.com')
+driver.find_element_by_id("email").send_keys(u)
 
 driver.find_element_by_id('passwd').clear()
-driver.find_element_by_id("passwd").send_keys('chenkuangqweasd')
+driver.find_element_by_id("passwd").send_keys(p)
 
 time.sleep(1)
 driver.find_element_by_id("login").click()
