@@ -12,12 +12,12 @@ chrome_options = Options()
 
 
 # ChromeOptions options = new ChromeOptions()
-# chrome_options.addArguments('start-maximized'); # open Browser in maximized mode
-# chrome_options.addArguments('disable-infobars'); # disabling infobars
-chrome_options.addArguments('--disable-extensions'); # disabling extensions
-chrome_options.addArguments('--disable-gpu'); # applicable to windows os only
-chrome_options.addArguments('--disable-dev-shm-usage'); # overcome limited resource problems
-chrome_options.addArguments('--no-sandbox'); # Bypass OS security model
+chrome_options.add_argument('start-maximized'); # open Browser in maximized mode
+chrome_options.add_argument('disable-infobars'); # disabling infobars
+chrome_options.add_argument('--disable-extensions'); # disabling extensions
+chrome_options.add_argument('--disable-gpu'); # applicable to windows os only
+chrome_options.add_argument('--disable-dev-shm-usage'); # overcome limited resource problems
+chrome_options.add_argument('--no-sandbox'); # Bypass OS security model
 # action  linux服务器驱动地址
 driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Neworld_SignIn/driver/chromedriver',chrome_options=chrome_options)    # Chrome浏览器  
 # driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Neworld_SignIn/driver/chromedriver')    # Chrome浏览器  
