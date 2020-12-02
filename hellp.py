@@ -17,7 +17,7 @@ driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Newo
 # driver.get('http://www.baidu.com') 
 driver.get('https://neworld.date/user') 
 #  获取cookies 
-# time.sleep(10)
+time.sleep(5)
 # cookies = driver.get_cookies()
 # print (type(cookies))
 # # print ("".join(cookies))
