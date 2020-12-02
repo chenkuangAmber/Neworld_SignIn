@@ -34,4 +34,8 @@ for c in cookie:
 driver.refresh()#刷新页面 
 
 time.sleep(5)
+
+buttons = find_element_by_xpath("//button[@id='checkin']")
+print('buttons',buttons)
+
 driver.find_element_by_id("checkin").click() # 点击元素
