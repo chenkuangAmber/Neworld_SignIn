@@ -49,10 +49,10 @@ driver.get('https://neworld.date/user')
 time.sleep(5)
 # 账号密码登录版本
 driver.find_element_by_id('email').clear()
-driver.find_element_by_id("email").send_keys('416811497@qq.com')
+driver.find_element_by_id("email").send_keys('1279552038@qq.com')
 
 driver.find_element_by_id('passwd').clear()
-driver.find_element_by_id("passwd").send_keys('chenkk..1.')
+driver.find_element_by_id("passwd").send_keys('chenkuangqweasd')
 
 time.sleep(1)
 driver.find_element_by_id("login").click()
