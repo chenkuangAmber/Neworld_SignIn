@@ -4,11 +4,11 @@ import json
 from selenium.webdriver.chrome.options import Options
 
 
-from pyvirtualdisplay import Display
+# from pyvirtualdisplay import Display
 
 
-display = Display(visible=0, size=(800, 800))  
-display.start()
+# display = Display(visible=0, size=(800, 800))  
+# display.start()
 
 
 chrome_options = Options()
@@ -19,12 +19,21 @@ chrome_options = Options()
 
 
 # ChromeOptions options = new ChromeOptions()
-chrome_options.add_argument('start-maximized'); # open Browser in maximized mode
-chrome_options.add_argument('disable-infobars'); # disabling infobars
-chrome_options.add_argument('--disable-extensions'); # disabling extensions
-chrome_options.add_argument('--disable-gpu'); # applicable to windows os only
-chrome_options.add_argument('--disable-dev-shm-usage'); # overcome limited resource problems
-chrome_options.add_argument('--no-sandbox'); # Bypass OS security model
+# chrome_options.add_argument('start-maximized'); # open Browser in maximized mode
+# chrome_options.add_argument('disable-infobars'); # disabling infobars
+# chrome_options.add_argument('--disable-extensions'); # disabling extensions
+# chrome_options.add_argument('--disable-gpu'); # applicable to windows os only
+# chrome_options.add_argument('--disable-dev-shm-usage'); # overcome limited resource problems
+# chrome_options.add_argument('--no-sandbox'); # Bypass OS security model
+
+
+
+
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--window-size=1420,1080')
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-gpu')
 # action  linux服务器驱动地址
 driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Neworld_SignIn/driver/chromedriver',chrome_options=chrome_options)    # Chrome浏览器  
 # driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Neworld_SignIn/driver/chromedriver')    # Chrome浏览器  
