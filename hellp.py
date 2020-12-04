@@ -5,7 +5,7 @@ import os
 from selenium.webdriver.chrome.options import Options
 
 
-
+# 虚拟出Chrome界面
 chrome_options = Options()
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument('--no-sandbox')
