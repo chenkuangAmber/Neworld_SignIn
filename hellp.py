@@ -23,12 +23,10 @@ driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Newo
 # 环境变量中读取数据，包含账号密码，和登陆页面
 u = os.environ["USERNAME"]
 p = os.environ["PASSWORD"]
-l = os.environ["URL"]
 
 print('u',u)
 print('p',p)
-print('l',l)
-driver.get(l) 
+driver.get("https://neworld.tv/auth/login) 
 #  获取cookies 
 time.sleep(5)
 # 账号密码登录版本
