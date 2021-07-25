@@ -19,7 +19,7 @@ driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Newo
 # windows 系统驱动路径
 # driver = webdriver.Chrome(executable_path='D:\Downloads\chromedriver_win32\chromedriver.exe')    # Chrome浏览器
 
-driver.get('https://neworld.date/user') 
+driver.get('https://neworld.tv/auth/login') 
 
 u = os.environ["USERNAME"]
 p = os.environ["PASSWORD"]
