@@ -19,12 +19,16 @@ driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Newo
 # windows 系统驱动路径
 # driver = webdriver.Chrome(executable_path='D:\Downloads\chromedriver_win32\chromedriver.exe')    # Chrome浏览器
 
-driver.get('https://neworld.tv/auth/login') 
 
+# 环境变量中读取数据，包含账号密码，和登陆页面
 u = os.environ["USERNAME"]
 p = os.environ["PASSWORD"]
+l = os.environ["LOGIN_PAGE_URL"]
+
 print('u',u)
 print('p',p)
+print('l',l)
+driver.get(l) 
 #  获取cookies 
 time.sleep(5)
 # 账号密码登录版本
@@ -39,18 +43,6 @@ driver.find_element_by_id("login").click()
 
 driver.refresh()#刷新页面 
 
-# cookies版本
-# cookies = driver.get_cookies()
-# print (type(cookies))
-# # print ("".join(cookies))
-# f1 = open('cookie.txt', 'w')
-# f1.write(json.dumps(cookies))
-
-# f1 = open('cookie.txt')
-# cookie = f1.read()
-# cookie =json.loads(cookie)
-# for c in cookie:
-#     driver.add_cookie(c)
 
 driver.refresh()#刷新页面 
 
