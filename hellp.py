@@ -20,7 +20,7 @@ driver = webdriver.Chrome(executable_path='/home/runner/work/Neworld_SignIn/Newo
 # driver = webdriver.Chrome(executable_path='D:\Downloads\chromedriver_win32\chromedriver.exe')    # Chrome浏览器
 
 
-# 环境变量中读取数据，包含账号密码，和登陆页面
+# 环境变量中读取数据，包含账号密码，和登陆页面测试
 u = os.environ["USERNAME"]
 p = os.environ["PASSWORD"]
 
