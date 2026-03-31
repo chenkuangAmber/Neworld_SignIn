@@ -39,12 +39,12 @@ driver.find_element(By.ID, "passwd").send_keys(p)
 time.sleep(2)
 driver.find_element(By.ID, "login-dashboard").click()
 
-driver.refresh()#刷新页面 
+#driver.refresh()#刷新页面 
 
 
-driver.refresh()#刷新页面 
+#driver.refresh()#刷新页面 
 
-time.sleep(50)
+time.sleep(10)
 
 # buttons = driver.find_element_by_xpath("//button[@id='checkin']")
 # print('buttons',buttons)
